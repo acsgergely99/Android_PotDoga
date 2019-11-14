@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Kocka Dobós Játék"
+        android:textSize="40dp"
+        android:id="@+id/cimtext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Játékos"
+        android:textSize="40dp"
+        android:id="@+id/felsotext"
+        android:layout_below="@+id/cimtext"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/felsoimage"
+        android:layout_below="@+id/felsotext"
+        android:src="@drawable/kocka1"
+
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kozepsotext"
+        android:layout_below="@+id/felsoimage"
+        android:text="Gép"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alsoimage"
+        android:layout_below="@+id/kozepsotext"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/kocka1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Eredmeny"
+        android:layout_below="@+id/alsoimage"
+        android:text="Eredmény:"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Eredmeny"
+        android:id="@+id/btn"
+        android:text="Dobás"
+        android:background="@android:color/holo_blue_light"
+        android:textSize="40dp"/>
+
+
+</RelativeLayout>
